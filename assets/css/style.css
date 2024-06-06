@@ -1,13 +1,22 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
 header {
     background: linear-gradient(to right, #FF00FF, #728ed8);
     display: flex;
     align-items: center; /* Centrar verticalmente */
     justify-content: center; /* Centrar horizontalmente */
-    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    height: 30%; /* 30% de la altura de la página */
 }
+
 img {
     width: 30%;
 }
+
 /* estilos h1 */
 h1 {
     color: burlywood;
@@ -16,15 +25,18 @@ h1 {
     margin-left: 20px;
     display: flex;
 }
+
 h1 span {
     display: inline-block;
     transform: rotate(0deg);
     transition: transform 1s;
 }
+
 h1 span.rotate {
     transform: rotate(360deg);
 }
-/*estilo login*/
+
+/* estilo login */
 .login-container {
     display: flex;
     align-items: center;
@@ -32,21 +44,49 @@ h1 span.rotate {
     height: 100vh;
     background: linear-gradient(to right, #FF00FF, #728ed8);
 }
+
 .login-form {
     background: white;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-/*estilo main*/
-main{
-    background: linear-gradient(to right, #FF00FF, #728ed8); 
+
+/* estilo main */
+main {
+    background: linear-gradient(to right, #FF00FF, #728ed8);
     display: flex;
     align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    height: 50%; /* 50% de la altura de la página */
 }
-/*estilo footer*/
-footer{
-    background: linear-gradient(to right, #FF00FF, #728ed8); 
+
+#boton {
+    font-size: 36px;
+    display: flex; /* Utiliza flexbox */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    text-align: center;
+    width: 200px;
+    height: 120px;
+}
+
+
+/* estilo footer */
+footer {
+    position:fixed;
+    margin-bottom: 0%;
+    background: linear-gradient(to right, #FF00FF, #728ed8);
     display: flex;
     align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    flex-direction: column; /* Alinear los <p> uno encima del otro */
+    height: 20%; /* 20% de la altura de la página */
+    width: 100%;
+}
+
+footer p {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
 }
