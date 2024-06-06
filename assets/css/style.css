@@ -54,7 +54,7 @@ h1 span.rotate {
 
 /* estilo main */
 main {
-    background: linear-gradient(to right, #FF00FF, #728ed8);
+   /* background: linear-gradient(to right, #FF00FF, #728ed8);*/
     display: flex;
     align-items: center; /* Centrar verticalmente */
     justify-content: center; /* Centrar horizontalmente */
@@ -74,19 +74,44 @@ main {
 
 /* estilo footer */
 footer {
-    position:fixed;
-    margin-bottom: 0%;
+    position: fixed;
+    margin-bottom: 0;
     background: linear-gradient(to right, #FF00FF, #728ed8);
     display: flex;
     align-items: center; /* Centrar verticalmente */
     justify-content: center; /* Centrar horizontalmente */
     flex-direction: column; /* Alinear los <p> uno encima del otro */
-    height: 20%; /* 20% de la altura de la página */
+    height: 8%; /* 20% de la altura de la página */
     width: 100%;
 }
 
 footer p {
-    font-size: 36px;
+    font-size: 24px;
     font-weight: bold;
     margin: 0;
 }
+/*estilo cards*/
+.card {
+    cursor: pointer;
+}
+
+/* Estilos para tarjetas en tamaño ampliado */
+.card-expanded {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 50%; /* Ajusta el tamaño ampliado según necesites */
+}
+
+/* Estilos para el botón de cierre */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: red;
+}
+
+
