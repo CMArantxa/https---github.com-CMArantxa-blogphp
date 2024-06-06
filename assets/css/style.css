@@ -1,0 +1,52 @@
+header {
+    background: linear-gradient(to right, #FF00FF, #728ed8);
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+}
+img {
+    width: 30%;
+}
+/* estilos h1 */
+h1 {
+    color: burlywood;
+    box-shadow: black;
+    font-size: 3rem; /* Ajusta el tamaño de la fuente según sea necesario */
+    margin-left: 20px;
+    display: flex;
+}
+h1 span {
+    display: inline-block;
+    transform: rotate(0deg);
+    transition: transform 1s;
+}
+h1 span.rotate {
+    transform: rotate(360deg);
+}
+/*estilo login*/
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right, #FF00FF, #728ed8);
+}
+.login-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/*estilo main*/
+main{
+    background: linear-gradient(to right, #FF00FF, #728ed8); 
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+}
+/*estilo footer*/
+footer{
+    background: linear-gradient(to right, #FF00FF, #728ed8); 
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+}
